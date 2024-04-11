@@ -1,6 +1,7 @@
-void setup() {
+void setup(){
   size(440, 420);
   background(#EAE744);
+  fill(#FF0000);
   
   int rectanguloAncho=40;
   int rectanguloAlto=20;
@@ -12,6 +13,7 @@ void setup() {
   
   for (int x=centroX; x < width - rectanguloAncho; x +=rectanguloAncho + distanciaX){
    for (int y=centroY; y < height - rectanguloAlto; y +=rectanguloAlto + distanciaX){
-    rect(x, y, retanguloAncho, rectanguloAlto);
+    rect(x, y, rectanguloAncho, rectanguloAlto);
    }
+  }
 }
