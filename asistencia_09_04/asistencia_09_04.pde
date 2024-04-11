@@ -9,4 +9,9 @@ void setup() {
   
   int centroX=rectanguloAncho/2;
   int centroY=rectanguloAlto/2;
+  
+  for (int x=centroX; x < width - rectanguloAncho; x +=rectanguloAncho + distanciaX){
+   for (int y=centroY; y < height - rectanguloAlto; y +=rectanguloAlto + distanciaX){
+    rect(x, y, retanguloAncho, rectanguloAlto);
+   }
 }
